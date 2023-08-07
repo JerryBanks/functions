@@ -11,7 +11,13 @@
 //
 // Write your code here 👇
 
-let getNumberFive = function() {console.log(5)}
+// Fixed code:
+
+function getNumberFive() {
+  return 5;
+}
+
+console.log(getNumberFive());
   // Your code here
 
 
@@ -60,11 +66,12 @@ console.log(multiply(5, 5, 5)); // Output: 125
 //
 // Write your code here 👇
 
+
 function concatenate(message, text) {
   return message + text;
 }
-  // Your code here
-}
+console.log(concatenate("Hello", " World")); // Output: "Hello World"
+
 
 // ----------------------------------------------------------------------------------------------
 // Exercise Five
@@ -81,9 +88,13 @@ function concatenate(message, text) {
 //   is "The total area of the triangle is 25"
 // 
 // Write your code here 👇
-
 function areaOfTriangle(base, height) {
   return (base * height) / 2;
 }
 
+// Testing the function with base = 5 and height = 10
+const base = 5;
+const height = 10;
+const area = areaOfTriangle(base, height);
+console.log(area);
   // Your code here
